@@ -1646,3 +1646,60 @@ img[loading="lazy"].lazyloaded {
   color: #e73149 !important;
 }
 
+
+/* === Personalizowany nadruk === */
+.customizer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+}
+.customizer h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.customizer-section {
+  margin-bottom: 1.5rem;
+}
+.customizer-section label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.customizer-section input[type="text"],
+.customizer-section input[type="email"],
+.customizer-section input[type="tel"],
+.customizer-section select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+#preview {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.mockup {
+  width: 150px;
+  height: 150px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #000;
+}
+.preview-text {
+  font-weight: bold;
+  text-align: center;
+}
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.hidden { display: none; }
+@media (max-width: 600px) {
+  #preview { justify-content: center; }
+}

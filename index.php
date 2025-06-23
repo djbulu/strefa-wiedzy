@@ -31,6 +31,7 @@
         <div class="page-header">
           <h2 class="page-title">Ostatnie artykuły</h2>
           <p class="page-description">Odkryj najnowsze artykuły z różnych dziedzin</p>
+          <a href="<?php echo esc_url( home_url( 'personalizowany-nadruk' ) ); ?>" class="btn btn--primary">Personalizuj nadruk</a>
         </div>
 
         
