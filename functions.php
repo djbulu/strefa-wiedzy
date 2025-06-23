@@ -102,6 +102,12 @@ add_action('wp_enqueue_scripts', function() {
   wp_localize_script('ecoblogpro-main-js', 'wp_ajax_url', admin_url('admin-ajax.php'));
 });
 
+add_action("wp_enqueue_scripts", function() {
+  if (is_page("personalizowany-nadruk")) {
+    wp_enqueue_script("nacotokomu-customizer", get_template_directory_uri() . "/assets/js/customizer.js", [], null, true);
+  }
+});
+
 // Ajax search
 add_action('wp_ajax_live_search', 'ecoblogpro_live_search');
 add_action('wp_ajax_nopriv_live_search', 'ecoblogpro_live_search');
